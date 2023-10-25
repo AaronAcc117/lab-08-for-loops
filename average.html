@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+<script>
+    var userInput = prompt("Number please...");
+
+    //   I make variables to store the sum and the number of input
+    var sum = 0;
+        var numberOfInputs = 4;
+        
+        //  loop  4 times
+        for (var i = 0; i < numberOfInputs; i++) {
+            
+            
+            
+            // I Convert the input from a string to an integer
+            var number = parseInt(userInput);
+
+            // checks if the numbered entered is valid 
+            if (!isNaN(number)) {
+                // Add the number to the sum
+                sum += number;
+            } else {
+                
+                alert("Invalid input. Please enter a valid number.");
+                i--; // Decreases  i to ask for the input again
+            }
+        }
+
+        // the average
+        var average = sum / numberOfInputs;
+
+        //  results
+        alert("The average is " + average);
+    </script>
+
+    
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,8 @@
 </head>
 <body>
     <script>
-        //  variables
-        var largestNumber = 500;
+    //  variables
+        var largestNumber = -Infinity;
         var numberOfInputs = 4;
 
         //  loop  4 times
@@ -15,10 +15,10 @@
             
             var userInput = prompt("Number please...");
             
-            // string to an integer
+            // string to interger 
             var number = parseInt(userInput);
 
-            // conversion checker 
+            //  conversion checker 
             if (!isNaN(number)) {
                 if (number > largestNumber) {
                     largestNumber = number;
@@ -29,9 +29,6 @@
             }
         }
 
-        // results 
+        //  largest number with a message
         alert("The largest number is " + largestNumber);
     </script>
-    
-</body>
-</html>

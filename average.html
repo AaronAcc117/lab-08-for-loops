@@ -6,37 +6,27 @@
 </head>
 <body>
 <script>
-    var userInput = prompt("Number please...");
+   
+        total = 0;
 
-    //   I make variables to store the sum and the number of input
-    var sum = 0;
-        var numberOfInputs = 4;
-        
-        //  loop  4 times
-        for (var i = 0; i < numberOfInputs; i++) {
-            
-            
-            
-            // I Convert the input from a string to an integer
-            var number = parseInt(userInput);
+        for (let i = 0; i < 4; i++) {
+            const userInput = prompt("Number please...");
+            const number = parseInt(userInput);
 
-            // checks if the numbered entered is valid 
             if (!isNaN(number)) {
-                // Add the number to the sum
-                sum += number;
+                total += number;
             } else {
-                
-                alert("Invalid input. Please enter a valid number.");
-                i--; // Decreases  i to ask for the input again
+                alert("Please enter a valid number.");
+                i--; // Decrement the loop counter to re-ask for input.
             }
         }
 
-        // the average
-        var average = sum / numberOfInputs;
-
-        //  results
-        alert("The average is " + average);
+        const average = total / 4;
+        console.log("The average is " + average);
     </script>
+    
+
+       
 
     
 </body>

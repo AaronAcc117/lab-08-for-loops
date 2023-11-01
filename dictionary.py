@@ -1,20 +1,13 @@
-myData = {
-"effective top top length": 515,
-"seat tube length": 500,
-"seat tube angle": 74.4,
-" head tube angle": 70.5, 
-"stack": 513,
-"reach": 367,
-"standover": 755
-}
+myData = {"effective top tube length": 515, "seat tube length": 500, "seat tube angle": 74.4, "head tube angle": 70.5, "stack": 513, "reach": 367, "standover height": 755}
 
-myKeys = {}
-myValues ={}
+# I concatenate 
+for key, value in myData.items():
+    print(f"key: {key}, value: {value}")
 
-for k, v mydata.items():
-    print("key: "+str(K) + ", value:" + str(v))
-    myKeys.append(k)
-    myValues.append(V)
+# Collects all keys into a separate list and then it prints
+all_keys = list(myData.keys())
+print("ALL KEYS:", all_keys)
 
-    print("ALL KEYS:" + str(myKeys))
-    print("ALL VALUES: " +str(myValues))
+#  gets the values into another list and prints
+all_values = list(myData.values())
+print("ALL VALUES:", all_values)
